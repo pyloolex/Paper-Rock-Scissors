@@ -1,0 +1,5 @@
+FROM python:3.10
+WORKDIR /app
+COPY . /app
+ENV PYTHONPATH="${PYTHONPATH}:/app"
+ENTRYPOINT ["python"]
